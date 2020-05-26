@@ -6,6 +6,7 @@ node {
   }
   stage('Build') {
     echo 'Building...'
+    echo config.target
     releasenotes()
   }
   stage('Test') {
